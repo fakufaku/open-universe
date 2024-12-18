@@ -44,7 +44,7 @@ dir_48k="${output_dir}/48k"
 
 if [ ! -d "${dir_48k}" ]; then
 
-    mkdir -p ${dir_48k}
+    mkdir -p ${dir_48k}/{train,test,val}
 
     # train set
     cp -r "${output_dir}/clean_trainset_28spk_wav" "${dir_48k}/train/clean"
